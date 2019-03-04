@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="INTF_TYPE" default="FTDI"/>
+  <arg name="FTDI_SERIAL" default="FTYZ2YGB"/>	
+  <arg name="VERSION" default="2"/>
+  <arg name="UPDATE_RATE" default="250"/>
+  <arg name="robot_name" default="tiago" />
+
+ <group ns="$(arg robot_name)">
+
+    <node name="skin_driver" pkg="tum_ics_skin_driver_events" type="skin_driver_events" args="$(arg INTF_TYPE) $(arg FTDI_SERIAL) $(arg VERSION) $(arg UPDATE_RATE)" output="screen"/>
+
+</group>
+
+</launch>

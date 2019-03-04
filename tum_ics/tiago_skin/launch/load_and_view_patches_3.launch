@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="CONFIG_PATH" default="$(find tiago_skin)/config/"/>
+
+	<!--group ns="skin">
+	<group ns="viz"-->
+
+	<node name="load_and_view_patches" 
+		pkg="tum_ics_skin_tutorials" 
+        type="load_and_view_patches_tut"
+		args="$(arg CONFIG_PATH)" output="screen">
+
+		<rosparam file="$(find tiago_skin)/config/left_finger_patch_list.yaml" command="load" />	
+	    <rosparam file="$(find tiago_skin)/config/right_finger_patch_list.yaml" command="load" />	
+		<rosparam file="$(find tiago_skin)/config/wrist_patch_list.yaml" command="load" />	
+
+	</node>
+
+	<!--/group>
+	</group-->
+
+</launch>

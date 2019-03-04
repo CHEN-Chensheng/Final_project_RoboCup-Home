@@ -1,0 +1,7 @@
+right_finger_patch_list:
+ [
+  'p2e.xml',
+  'p5e.xml',
+  'p6e.xml',
+ ]
+

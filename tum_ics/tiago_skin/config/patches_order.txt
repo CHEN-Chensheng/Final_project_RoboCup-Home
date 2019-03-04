@@ -1,0 +1,14 @@
+
+
+###  Patch  ####    ###  Patch id #### 
+
+left finger tip             1
+right finger tip            2
+left finger inner           3
+right finger inner          5
+left finger outter          4
+right finger outter         6
+wrist up                    7
+wriet right                 8
+wrist down                  9
+wrist left                 10

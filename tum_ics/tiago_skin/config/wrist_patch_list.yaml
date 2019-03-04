@@ -1,0 +1,8 @@
+wrist_patch_list:
+ [
+  'p7e.xml',
+  'p8e.xml',
+  'p9e.xml',
+  'p10e.xml',
+ ]
+
