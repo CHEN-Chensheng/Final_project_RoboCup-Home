@@ -1,0 +1,9 @@
+base_frame_list:
+ [
+  'world',
+  'base_link',
+  'gripper_link',
+  'gripper_left_finger_link',
+  'gripper_right_finger_link',
+ ]
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	
+	<arg name="PATCH_ID" default="0"/> <!-- This is the id of the desired patch. If you set it to "0" then it will load the first patch in the config file what ever id this patch has!/-->
+	<arg name="CONFIG_PATH" default="$(find tum_ics_h1_skin)/config/"/>
+	<arg name="FILE_DIALOG" default="false"/>  <!-- if only path is specified: always open file dialog /-->
+
+	<node name="load_and_view_patch" 
+		pkg="tum_ics_h1_skin" 
+		type="load_and_view_patch" 
+		args="$(arg CONFIG_PATH) $(arg PATCH_ID) $(arg FILE_DIALOG)" output="screen"/>
+
+</launch>
